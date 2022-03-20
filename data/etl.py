@@ -169,7 +169,7 @@ def run_etl(js_output_path, download_dir_path, skip_downloads=False):
     datafiles['g_xlsx'] = 'GroupingsOBSQuestions2021.xlsx'
     datafiles['g_xlsx_qsheet'] = 'QuestionsGroups 2021 and 2019'
     datafiles['g_xlsx_csheet'] = 'CountriesRegions 2019-21'
-    datafiles['av_xlsx'] = 'Public Availability 2019.xlsx'
+    datafiles['av_xlsx'] = 'Public Availability 2021.xlsx'
     datafiles['av_xlsx_sheets'] = \
         ['2006', '2008', '2010', '2012', '2015', '2017', '2019', '2021']
     datafiles['pp_xlsx'] = 'public participation.xlsx'
@@ -188,6 +188,7 @@ def run_etl(js_output_path, download_dir_path, skip_downloads=False):
     dataset.update(dataset_2017)
 
     dataset.update(dataset_2019)
+    dataset.update(dataset_2021)
 
     # Write output js file
     lib_write.write_js(dataset, js_output_path)
