@@ -211,7 +211,7 @@ def _get_indicator_questions(year):
         cols = range(1, 150)
         t3q = {143: 'PBS-2', 144: 'EBP-2', 145: 'EB-2', 146: 'IYRs-2',
                147: 'MYR-2', 148: 'YER-2', 149: 'AR-2'}
-    elif year >= 2020:
+    elif year >= 2022:
         raise Exception('TODO')
     return (cols, t3q)
 
